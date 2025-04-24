@@ -2,7 +2,7 @@ import gymnasium as gym
 
 class Environment:
     def __init__(self):
-        self.env = gym.make("CartPole-v1", render_mode="human")
+        self.env =  gym.make("CarRacing-v3", domain_randomize=False, render_mode="human")
     def reset(self):
         state, info = self.env.reset()
         return state
